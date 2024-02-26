@@ -5,6 +5,7 @@
 package com.mycompany.jardineria;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,7 +17,7 @@ public class Conexion_basededatos {
     Connection conectar  = null;
     String usuario= "root";
     String contraseña= "";
-    String bd= "Jardineria";
+    String bd= "jardineria";
     String ip= "localhost";
     String puerto= "3306";
     
@@ -29,8 +30,8 @@ public class Conexion_basededatos {
             conectar = DriverManager.getConnection(cadena,usuario,contraseña);
             JOptionPane.showMessageDialog(null,"La conexion se ha realizado con exito");
           
-        }catch (Exception e){
-            JOptionPane.showMessageDialog(null,"Error al conectarse a la base de datos"+e.toString());
+        }catch (ClassNotFoundException | SQLException e){
+            e.printStackTrace();
         }
         return conectar;
     }

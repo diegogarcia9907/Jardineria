@@ -8,7 +8,7 @@ package com.mycompany.jardineria;
  *
  * @author johan
  */
-public class Detalle_pedido {
+public class Detalle_pedido  {
     private int codigo_pedido;
     private String codigo_producto;
     private int cantidad;

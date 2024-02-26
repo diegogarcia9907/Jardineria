@@ -8,7 +8,7 @@ package com.mycompany.jardineria;
  *
  * @author diego
  */
-public class Cliente {
+public class Cliente extends Tabla {
     
     private int codigo_cliente;
     private String nombre_cliente;
@@ -24,9 +24,23 @@ public class Cliente {
     private String codigo_empleado_rep_ventas;
     private String limite_credito;
 
+    
     public Cliente() {
+        this.campos ="codigo_cliente,"
+                + "nombre_cliente,"
+                + "nombre_contacto,"
+                + "apellido_contacto,"
+                + "telefono,"
+            + "fax,linea_direccion1" +
+           ",linea_direccion2" +
+           ",ciudad" +
+           ",pais" +
+           ",codigo_postal" +
+           ",codigo_empleado_rep_ventas" +
+           ",limite_credito";
+         this.camposSeparados = this.campos.split(",");
     }
-
+    
     public Cliente(int codigo_cliente, String nombre_cliente) {
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
@@ -131,11 +145,13 @@ public class Cliente {
     public String getLimite_credito() {
         return limite_credito;
     }
+    
+    
 
     public void setLimite_credito(String limite_credito) {
         this.limite_credito = limite_credito;
     }
-    
+   
     @Override
     public String toString() {
         return "cliente{" +
