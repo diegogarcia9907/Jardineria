@@ -8,20 +8,20 @@ package com.mycompany.jardineria;
  *
  * @author johan
  */
-public class Detalle_pedido  {
+public class DetallePedido  {
     private int codigoPedido;
     private String codigoProducto;
     private int cantidad;
     private float precioUnidad;
     private short numeroLinea;
 
-    public Detalle_pedido(int codigoPedido, String codigoProducto, int cantidad) {
+    public DetallePedido(int codigoPedido, String codigoProducto, int cantidad) {
         this.codigoPedido = codigoPedido;
         this.codigoProducto = codigoProducto;
         this.cantidad = cantidad;
     }
 
-    public Detalle_pedido() {
+    public DetallePedido() {
     }
 
     public int getCodigoPedido() {
