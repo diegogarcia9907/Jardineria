@@ -9,35 +9,35 @@ package com.mycompany.jardineria;
  * @author johan
  */
 public class Detalle_pedido  {
-    private int codigo_pedido;
-    private String codigo_producto;
+    private int codigoPedido;
+    private String codigoProducto;
     private int cantidad;
-    private float precio_unidad;
-    private short numero_linea;
+    private float precioUnidad;
+    private short numeroLinea;
 
-    public Detalle_pedido(int codigo_pedido, String codigo_producto, int cantidad) {
-        this.codigo_pedido = codigo_pedido;
-        this.codigo_producto = codigo_producto;
+    public Detalle_pedido(int codigoPedido, String codigoProducto, int cantidad) {
+        this.codigoPedido = codigoPedido;
+        this.codigoProducto = codigoProducto;
         this.cantidad = cantidad;
     }
 
     public Detalle_pedido() {
     }
 
-    public int getCodigo_pedido() {
-        return codigo_pedido;
+    public int getCodigoPedido() {
+        return codigoPedido;
     }
 
-    public void setCodigo_pedido(int codigo_pedido) {
-        this.codigo_pedido = codigo_pedido;
+    public void setCodigoPedido(int codigoPedido) {
+        this.codigoPedido = codigoPedido;
     }
 
-    public String getCodigo_producto() {
-        return codigo_producto;
+    public String getCodigoProducto() {
+        return codigoProducto;
     }
 
-    public void setCodigo_producto(String codigo_producto) {
-        this.codigo_producto = codigo_producto;
+    public void setCodigoProducto(String codigoProducto) {
+        this.codigoProducto = codigoProducto;
     }
 
     public int getCantidad() {
@@ -48,20 +48,20 @@ public class Detalle_pedido  {
         this.cantidad = cantidad;
     }
 
-    public float getPrecio_unidad() {
-        return precio_unidad;
+    public float getPrecioUnidad() {
+        return precioUnidad;
     }
 
-    public void setPrecio_unidad(float precio_unidad) {
-        this.precio_unidad = precio_unidad;
+    public void setPrecioUnidad(float precioUnidad) {
+        this.precioUnidad = precioUnidad;
     }
 
-    public short getNumero_linea() {
-        return numero_linea;
+    public short getNumeroLinea() {
+        return numeroLinea;
     }
 
-    public void setNumero_linea(short numero_linea) {
-        this.numero_linea = numero_linea;
+    public void setNumeroLinea(short numeroLinea) {
+        this.numeroLinea = numeroLinea;
     }
     
     
