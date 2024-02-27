@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author diego
  */
-public class Conexion_basededatos {
+public class ConexionBasededatos {
     
     Connection conectar  = null;
     String usuario= "root";

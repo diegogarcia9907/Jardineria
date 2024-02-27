@@ -15,7 +15,7 @@ public class Jardineria {
 
     public static void main(String[] args) throws SQLException   {
    
-        Conexion_basededatos  connection = new Conexion_basededatos();
+        ConexionBasededatos  connection = new ConexionBasededatos();
 
         CRUDAbstracto crud = new CRUDAbstracto(connection.establecerConexion());
         Cliente nuevoCliente = new Cliente();
